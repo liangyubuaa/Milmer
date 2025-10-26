@@ -15,14 +15,25 @@ Emotions play a crucial role in human behavior and decision-making, making emoti
 - Python 3.8
 - For other dependencies, see [requirements.txt](./requirements.txt)
 
+## Parameters
+
+For detailed parameter configuration, please refer to the [config](./config) folder.
+
+- **Pretrained model**: Use swin-tiny-patch4-window7-224-finetuned-face-emotion-v12 by default.
+- **LR schedule**: Cosine decay reduces lr from its initial value to lrf×lr with lrf=0.1 by default.
+- **Batch size**: Train with batch size 14 and use the same for test.
+- **Epochs**: Train for 100 epochs; change it in config/multi_instance.json if needed.
+- **Optimizer**: AdamW with lr 1e-4 and other PyTorch defaults.
+- **MIL**: Use 10 instances per sample and select top 3 by attention-weighted top-k.
+- **Fusion**: Fusion type is cross_attention; available options are none, cross_attention, and mlp.
+- **Transformer encoder**: d_model 768, nhead 12, dim_feedforward 2048, num_layers 2, dropout 0.2, CLS dropout 0.1.
+- **Seed**: Random seed 0.
 
 ## Reference
 
-```
 @article{wang2025milmer,
-  title={Milmer: a Framework for Multiple Instance Learning based Multimodal Emotion Recognition},
-  author={Wang, Zaitian and He, Jian and Liang, Yu and Hu, Xiyuan and Peng, Tianhao and Wang, Kaixin and Wang, Jiakai and Zhang, Chenlong and Zhang, Weili and Niu, Shuang and others},
-  journal={arXiv preprint arXiv:2502.00547},
-  year={2025}
+title={Milmer: a Framework for Multiple Instance Learning based Multimodal Emotion Recognition},
+author={Wang, Zaitian and He, Jian and Liang, Yu and Hu, Xiyuan and Peng, Tianhao and Wang, Kaixin and Wang, Jiakai and Zhang, Chenlong and Zhang, Weili and Niu, Shuang and others},
+journal={arXiv preprint arXiv:2502.00547},
+year={2025}
 }
-```

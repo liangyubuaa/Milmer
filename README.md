@@ -31,10 +31,13 @@ For detailed parameter configuration, please refer to the [config](./config) fol
 
 ## Reference
 ```
-@article{wang2025milmer,
-title={Milmer: a Framework for Multiple Instance Learning based Multimodal Emotion Recognition},
-author={Wang, Zaitian and He, Jian and Liang, Yu and Hu, Xiyuan and Peng, Tianhao and Wang, Kaixin and Wang, Jiakai and Zhang, Chenlong and Zhang, Weili and Niu, Shuang and others},
-journal={arXiv preprint arXiv:2502.00547},
-year={2025}
+@article{WANG2026134368,
+title = {Milmer: a framework for multiple instance learning based multimodal emotion recognition},
+journal = {Neurocomputing},
+pages = {134368},
+year = {2026},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2026.134368},
+author = {Zaitian Wang and Jian He and Yu Liang and Xiyuan Hu and Tianhao Peng and Kaixin Wang and Jiakai Wang and Chenlong Zhang and Weili Zhang and Shuang Niu and Xiaoyang Xie},
 }
 ```
